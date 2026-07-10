@@ -15,13 +15,16 @@ export default function Projects() {
             <motion.a
               key={project.id}
               href={project.href}
+              target="_blank"
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.45, delay: i * 0.05 }}
               className="group grid md:grid-cols-12 items-start md:items-center gap-4 md:gap-6 border-b border-line py-8 hover:bg-panel/60 transition-colors px-2 -mx-2"
             >
-              <span className="md:col-span-1 eyebrow text-brass">{project.id}</span>
+              <span className="md:col-span-1 eyebrow text-brass">
+                {project.id}
+              </span>
 
               <div className="md:col-span-4">
                 <h3 className="font-display text-2xl text-paper group-hover:text-brass transition-colors">
@@ -34,10 +37,14 @@ export default function Projects() {
               </p>
 
               <div className="md:col-span-2 flex flex-col items-start md:items-end gap-2">
-                <span className="eyebrow text-slate-dim text-[11px]">{project.metric}</span>
-                <span className="eyebrow text-paper group-hover:text-brass transition-colors">
-                  View ↗
+                <span className="eyebrow text-slate-dim text-[11px]">
+                  {project.metric}
                 </span>
+                {project.isViewVisible && (
+                  <span className="eyebrow text-paper group-hover:text-brass transition-colors">
+                    View ↗
+                  </span>
+                )}
               </div>
 
               <div className="md:col-span-12 flex flex-wrap gap-2 mt-1">
