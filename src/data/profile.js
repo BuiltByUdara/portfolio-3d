@@ -112,8 +112,24 @@ projects: [
     metric: "Full-stack application delivery",
     isViewVisible:false,
   },
+  {
+    id: "08",
+    name: "Proteccio",
+    summary: "A full-stack web application built with modern JavaScript technologies, focusing on scalable APIs, responsive interfaces, and seamless user experiences.",
+    stack: ["React", "Node.js", "PostgreSQL", "Express.js","Prisma"],
+    href: "https://proteccio-data.vercel.app/",
+    metric: "Full-stack application delivery",
+    isViewVisible:true,
+  },
 ],
   experience: [
+    {
+    period: "2026/04/01 - 2026/07/31",
+    role: "Senior Software Engineer",
+    org: "Skaleminds LLC",
+    detail:
+      "Led the design and development of scalable web applications using modern frontend technologies and cloud-based architectures. Mentored engineers, improved application performance, established engineering best practices, and delivered reliable solutions for complex business workflows.",
+  },
   {
     period: "2024 - 2026",
     role: "Senior Software Engineer",

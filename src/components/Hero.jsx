@@ -5,7 +5,10 @@ import SchematicCore from "./SchematicCore";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative min-h-screen blueprint-grid overflow-hidden">
+    <section
+      id="top"
+      className="relative min-h-screen blueprint-grid overflow-hidden"
+    >
       {/* 3D signature element */}
       <div className="absolute inset-0 md:right-[-8%] pointer-events-none">
         <Suspense fallback={null}>
@@ -52,7 +55,7 @@ export default function Hero() {
         >
           <a
             href="#work"
-            className="eyebrow bg-brass text-ink px-6 py-3 hover:bg-paper transition-colors"
+            className="eyebrow bg-paper text-slate px-6 py-3 hover:bg-paper transition-colors"
           >
             View the work
           </a>
