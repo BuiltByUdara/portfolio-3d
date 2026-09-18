@@ -7,7 +7,7 @@ const profile = {
   email: "madu12dara@gmail.com",
   resumeUrl: "#",
   socials: [
-    { label: "GitHub", href: "https://github.com/udaraAiken/" },
+    { label: "GitHub", href: "https://github.com/BuiltByUdara" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/udara-madumalka-20a7a1168/" },
   ],
 
