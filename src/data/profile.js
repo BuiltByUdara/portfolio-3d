@@ -121,6 +121,15 @@ projects: [
     metric: "Full-stack application delivery",
     isViewVisible:true,
   },
+  {
+    id: "09",
+    name: "Ceylone Ayur",
+    summary: "Build a modern, high-aesthetic interactive frontend for Ayurveda & Island Wellness (Sri Lanka) featuring Spline 3D, React, Tailwind CSS, and Firebase Firestore (v9+ SDK).",
+    stack: ["React","Firebase",'Tailwind CSS'],
+    href:"https://ceylone-ayur.vercel.app/",
+    metric: "Full-stack application delivery",
+    isViewVisible:true,
+  }
 ],
   experience: [
     {
