@@ -129,7 +129,16 @@ projects: [
     href:"https://ceylone-ayur.vercel.app/",
     metric: "Full-stack application delivery",
     isViewVisible:true,
-  }
+  },
+  {
+  id: "10",
+  name: "Brainzo",
+  summary: "Build an automated social giveaway dashboard and daily IQ challenge platform integrating Meta Graph API for real-time comment extraction, duplicate filtering, and secure random winner selection.",
+  stack: ["React", "Node.js", "Tailwind CSS", "MongoDB", "Express.js","Meta Graph API",],
+  href: "https://drive.google.com/file/d/1cxCnz64d596FMmEW3H7Im3LY7Pf7c7fq/view?usp=sharing",
+  metric: "Automated giveaway & comment processing workflow",
+  isViewVisible: true,
+}
 ],
   experience: [
     {
