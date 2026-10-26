@@ -3,7 +3,10 @@ import profile from "../data/profile";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative border-t border-line blueprint-grid">
+    <section
+      id="contact"
+      className="relative border-t border-line blueprint-grid"
+    >
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32">
         <p className="eyebrow mb-4">§ 05 — Contact</p>
 
