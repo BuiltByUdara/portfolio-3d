@@ -197,6 +197,25 @@ const profile = {
       metric: "4 fighters · 21 motion-capture animations · 3 arenas",
       isViewVisible: true,
     },
+    {
+      id: "12",
+      name: "Anatomy Explorer",
+      summary:
+        "An interactive 3D human anatomy platform with 42 anatomical models, selectable structures, quizzes, saved collections, and English, Sinhala, and Tamil language support.",
+      stack: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "OrganUI",
+        "Three.js",
+        "React Router",
+        "Zustand",
+      ],
+      href: "https://3-d-organ-ui.vercel.app",
+      metric: "42 anatomy models · 3 languages · Dark & light themes",
+      isViewVisible: true,
+    },
   ],
   experience: [
     {
