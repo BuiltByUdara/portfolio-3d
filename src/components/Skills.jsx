@@ -5,9 +5,9 @@ export default function Skills() {
   return (
     <section id="skills" className="relative border-t border-line bg-panel">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32">
-        <p className="eyebrow mb-4">§ 02 — Toolkit</p>
+        <p className="eyebrow mb-4">03 / Toolkit</p>
         <h2 className="font-display text-3xl md:text-4xl text-paper leading-tight mb-14 max-w-xl">
-          The parts list.
+          The tools behind the craft.
         </h2>
 
         <div className="grid md:grid-cols-2 gap-px bg-line border border-line">
@@ -43,3 +43,4 @@ export default function Skills() {
     </section>
   );
 }
+

@@ -5,59 +5,13 @@ export default function Projects() {
   return (
     <section id="work" className="relative border-t border-line">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32">
-        <p className="eyebrow mb-4">§ 03 — Selected work</p>
-        <h2 className="font-display text-3xl md:text-4xl text-paper leading-tight mb-14 max-w-xl">
-          Things I've shipped and stand behind.
-        </h2>
-
-        <div className="flex flex-col border-t border-line">
+        <div className="work-heading"><div><p className="eyebrow mb-4">01 / Selected work</p><h2 className="font-display text-4xl md:text-6xl">From idea.<br /><span className="text-brass">Into the world.</span></h2></div><p>A selection of platforms, experiences,<br />and things built to make a difference.</p></div>
+        <div className="project-grid">
           {profile.projects.map((project, i) => (
-            <motion.a
-              key={project.id}
-              href={project.href}
-              target="_blank"
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.45, delay: i * 0.05 }}
-              className="group grid md:grid-cols-12 items-start md:items-center gap-4 md:gap-6 border-b border-line py-8 hover:bg-panel/60 transition-colors px-2 -mx-2"
-            >
-              <span className="md:col-span-1 eyebrow text-brass">
-                {project.id}
-              </span>
-
-              <div className="md:col-span-4">
-                <h3 className="font-display text-2xl text-paper group-hover:text-brass transition-colors">
-                  {project.name}
-                </h3>
-              </div>
-
-              <p className="md:col-span-5 text-slate leading-relaxed text-[15px]">
-                {project.summary}
-              </p>
-
-              <div className="md:col-span-2 flex flex-col items-start md:items-end gap-2">
-                <span className="eyebrow text-slate-dim text-[11px]">
-                  {project.metric}
-                </span>
-                {project.isViewVisible && (
-                  <span className="eyebrow text-paper group-hover:text-brass transition-colors">
-                    View ↗
-                  </span>
-                )}
-              </div>
-
-              <div className="md:col-span-12 flex flex-wrap gap-2 mt-1">
-                {project.stack.map((s) => (
-                  <span
-                    key={s}
-                    className="eyebrow normal-case tracking-normal text-xs text-slate-dim border border-line px-2 py-1"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </motion.a>
+            <motion.article key={project.id} className="project-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.5 }}>
+              <div className={`project-art art-${i % 4}`} aria-hidden="true"><span className="art-index">{project.id} / PROJECT</span><div className="art-orbit" /><div className="art-core" /><span className="art-title">{project.name}</span><span className="art-caption">{project.stack.slice(0, 2).join(' / ')}</span></div>
+              <div className="project-body"><div className="project-title"><h3>{project.name}</h3>{project.isViewVisible && project.href !== '#' && <a href={project.href} target="_blank" rel="noreferrer" aria-label={`View ${project.name} (opens in a new tab)`}>↗</a>}</div><p>{project.summary}</p><div className="project-stack">{project.stack.map(s => <span key={s}>{s}</span>)}</div><div className="project-metric">{project.metric}</div></div>
+            </motion.article>
           ))}
         </div>
       </div>

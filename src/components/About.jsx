@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="relative border-t border-line">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 grid md:grid-cols-12 gap-10">
         <div className="md:col-span-4">
-          <p className="eyebrow mb-4">§ 01 — About</p>
+          <p className="eyebrow mb-4">02 / About</p>
           <h2 className="font-display text-3xl md:text-4xl text-paper leading-tight">
             Engineering with a builder's patience.
           </h2>
@@ -41,3 +41,4 @@ export default function About() {
     </section>
   );
 }
+
